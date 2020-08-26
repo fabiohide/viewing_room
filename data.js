@@ -12,19 +12,27 @@ var APP_DATA = {
         {
           "tileSize": 512,
           "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
         }
       ],
-      "faceSize": 512,
+      "faceSize": 1600,
       "initialViewParameters": {
-        "yaw": -1.7634963082437203,
-        "pitch": 0.030302853397662588,
-        "fov": 1.8997940173432455
+        "yaw": -1.3557771939230463,
+        "pitch": -0.024516847736956393,
+        "fov": 1.1736957392994543
       },
       "linkHotspots": [
         {
-          "yaw": -3.1403924640653003,
-          "pitch": 0.5254822057487587,
-          "rotation": 6.283185307179586,
+          "yaw": 0.020938741330494892,
+          "pitch": 0.4818759198077469,
+          "rotation": 0,
           "target": "1-sala-2"
         }
       ],
@@ -46,32 +54,32 @@ var APP_DATA = {
       ],
       "faceSize": 512,
       "initialViewParameters": {
-        "yaw": 1.3891941503879544,
-        "pitch": 0.0964494990202791,
-        "fov": 1.8997940173432455
+        "yaw": -1.211648648289943,
+        "pitch": 0.0007377227346321291,
+        "fov": 1.8988380755400427
       },
       "linkHotspots": [
         {
-          "yaw": 3.131620750704851,
-          "pitch": 0.5358735796401319,
+          "yaw": 1.8714933381132832,
+          "pitch": 0.5933631668141341,
           "rotation": 0,
           "target": "0-sala-1"
         },
         {
-          "yaw": -1.7909392553525283,
-          "pitch": 0.5206193110986259,
-          "rotation": 31.415926535897956,
+          "yaw": -2.6569433556914213,
+          "pitch": 0.5888853363516784,
+          "rotation": 0,
           "target": "0-sala-1"
         }
       ],
       "infoHotspots": []
     }
   ],
-  "name": "Project Title",
+  "name": "Fábio Hideki - Viewing Room",
   "settings": {
     "mouseViewMode": "drag",
     "autorotateEnabled": false,
-    "fullscreenButton": false,
-    "viewControlButtons": false
+    "fullscreenButton": true,
+    "viewControlButtons": true
   }
 };
