@@ -39,10 +39,10 @@ a:visited {
 
 #pano {
   position: absolute;
-  top: 15%;
-  left: 15%;
-  width: 70%;
-  height: 70%;
+  top: 10%;
+  left: 5%;
+  width: 90%;
+  height: 80%;
   overflow: hidden;
 }
 
@@ -277,8 +277,8 @@ body.fullscreen-enabled.mobile #autorotateToggle {
 
 #sceneList .scenes {
   width: 100%;
-  background-color: rgb(58, 68, 84);
-  background-color: rgba(58, 68, 84, 0.8);
+  background-color: rgb(136, 136, 136);
+  background-color: rgba(77, 77, 77, 0.8);
 }
 
 .mobile #sceneList {
@@ -324,13 +324,13 @@ body.fullscreen-enabled.mobile #autorotateToggle {
 }
 
 .no-touch #sceneList .scene:hover {
-  background-color: rgb(103, 115, 131);
-  background-color: rgba(103, 115, 131, 0.8);
+  background-color: rgb(136, 136, 136);
+  background-color: rgba(139, 139, 139, 0.8);
 }
 
 #sceneList .scene.current {
-  background-color: rgb(103, 115, 131);
-  background-color: rgba(103, 115, 131, 0.8);
+  background-color: rgb(136, 136, 136);
+  background-color: rgba(139, 139, 139, 0.8);
 }
 
 /* Hide scene list when only a single scene exists */
@@ -793,10 +793,10 @@ body.single-scene #sceneListToggle {
   bottom: 0;
   left: 50%;
   width: 40px;
-  height: 40px;
+  height: 38px;
   padding: 5px;
   background-color: rgb(10, 10, 10);
-  background-color: rgba(10, 10, 10);
+  background-color: rgba(40, 40, 40, 0.5);
 }
 
 body.view-control-buttons .viewControlButton {
