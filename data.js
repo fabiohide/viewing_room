@@ -1,8 +1,8 @@
 var APP_DATA = {
   "scenes": [
     {
-      "id": "0-sala-1",
-      "name": "Sala 1",
+      "id": "0-g",
+      "name": "g",
       "levels": [
         {
           "tileSize": 256,
@@ -22,25 +22,25 @@ var APP_DATA = {
           "size": 2048
         }
       ],
-      "faceSize": 1600,
+      "faceSize": 1560,
       "initialViewParameters": {
-        "yaw": -1.3557771939230463,
-        "pitch": -0.024516847736956393,
-        "fov": 1.1736957392994543
+        "yaw": 0.2167573520066135,
+        "pitch": 0.05518122099484657,
+        "fov": 1.4942037238501225
       },
       "linkHotspots": [
         {
-          "yaw": 0.020938741330494892,
-          "pitch": 0.4818759198077469,
-          "rotation": 0,
-          "target": "1-sala-2"
+          "yaw": -2.3389807838214622,
+          "pitch": 0.3483560504390866,
+          "rotation": 11.780972450961727,
+          "target": "1-verde_03"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "1-sala-2",
-      "name": "Sala 2",
+      "id": "1-verde_03",
+      "name": "verde_03",
       "levels": [
         {
           "tileSize": 256,
@@ -50,36 +50,38 @@ var APP_DATA = {
         {
           "tileSize": 512,
           "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
         }
       ],
-      "faceSize": 512,
+      "faceSize": 1360,
       "initialViewParameters": {
-        "yaw": -1.211648648289943,
-        "pitch": 0.0007377227346321291,
-        "fov": 1.8988380755400427
+        "yaw": -3.0832666103495576,
+        "pitch": 0.006750950381462673,
+        "fov": 1.5707963267948966
       },
       "linkHotspots": [
         {
-          "yaw": 1.8714933381132832,
-          "pitch": 0.5933631668141341,
+          "yaw": 0.4852564595532076,
+          "pitch": 0.359528020764575,
           "rotation": 0,
-          "target": "0-sala-1"
-        },
-        {
-          "yaw": -2.6569433556914213,
-          "pitch": 0.5888853363516784,
-          "rotation": 0,
-          "target": "0-sala-1"
+          "target": "0-g"
         }
       ],
       "infoHotspots": []
     }
   ],
-  "name": "Fábio Hideki - Viewing Room",
+  "name": "Project Title",
   "settings": {
     "mouseViewMode": "drag",
-    "autorotateEnabled": false,
-    "fullscreenButton": true,
+    "autorotateEnabled": true,
+    "fullscreenButton": false,
     "viewControlButtons": true
   }
 };
