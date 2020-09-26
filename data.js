@@ -1,8 +1,8 @@
 var APP_DATA = {
   "scenes": [
     {
-      "id": "0-g",
-      "name": "g",
+      "id": "0-i",
+      "name": "I",
       "levels": [
         {
           "tileSize": 256,
@@ -16,31 +16,27 @@ var APP_DATA = {
         {
           "tileSize": 512,
           "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
         }
       ],
-      "faceSize": 1560,
+      "faceSize": 1024,
       "initialViewParameters": {
-        "yaw": 0.2167573520066135,
-        "pitch": 0.05518122099484657,
-        "fov": 1.4942037238501225
+        "yaw": 3.082044571552565,
+        "pitch": 0.007246533004522604,
+        "fov": 1.6772483270261969
       },
       "linkHotspots": [
         {
-          "yaw": -2.3389807838214622,
-          "pitch": 0.3483560504390866,
-          "rotation": 11.780972450961727,
-          "target": "1-verde_03"
+          "yaw": 0.43979024794579935,
+          "pitch": 0.26798680366950833,
+          "rotation": 0,
+          "target": "1-ii"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "1-verde_03",
-      "name": "verde_03",
+      "id": "1-ii",
+      "name": "II",
       "levels": [
         {
           "tileSize": 256,
@@ -60,28 +56,59 @@ var APP_DATA = {
           "size": 2048
         }
       ],
-      "faceSize": 1360,
+      "faceSize": 1536,
       "initialViewParameters": {
-        "yaw": -3.0832666103495576,
-        "pitch": 0.006750950381462673,
+        "yaw": 3.130518819430792,
+        "pitch": 0.0034662582489506377,
         "fov": 1.5707963267948966
       },
       "linkHotspots": [
         {
-          "yaw": 0.4852564595532076,
-          "pitch": 0.359528020764575,
-          "rotation": 0,
-          "target": "0-g"
+          "yaw": 0.5113073206549625,
+          "pitch": 0.17975554324580045,
+          "rotation": 6.283185307179586,
+          "target": "0-i"
         }
       ],
       "infoHotspots": []
+    },
+    {
+      "id": "2-iii",
+      "name": "III",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1600,
+      "initialViewParameters": {
+        "yaw": 2.014186979915195,
+        "pitch": 0.012345301910993811,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [],
+      "infoHotspots": []
     }
   ],
-  "name": "Project Title",
+  "name": "Ohne Titel",
   "settings": {
     "mouseViewMode": "drag",
-    "autorotateEnabled": true,
-    "fullscreenButton": false,
+    "autorotateEnabled": false,
+    "fullscreenButton": true,
     "viewControlButtons": true
   }
 };
