@@ -49,10 +49,16 @@ a:visited {
 #titleBar {
   position: absolute;
   top: 0;
-  left: 0;
-  right: 40px;
+  left: 0%;
   height: 40px;
+  width: 100%;
+  backdrop-filter: blur(5px); 
+  background-color: rgb(130, 130, 130);
+  background-color: rgba(250, 250, 250, 0.15);
   text-align: center;
+
+  border-radius: 3px;
+  overflow: hidden;
 }
 
 .mobile #titleBar {
@@ -60,35 +66,16 @@ a:visited {
   right: 50px;
 }
 
-/* If there is a fullscreen button the title bar must make space for it */
-body.fullscreen-enabled #titleBar {
-  right: 80px;
-}
-
-body.fullscreen-enabled.mobile #titleBar {
-  right: 100px;
-}
-
-/* If there are multiple scenes the title bar must make space for the scene list toggle */
-body.multiple-scenes #titleBar {
-  left: 40px;
-}
-
-body.multiple-scenes.mobile #titleBar {
-  left: 50px;
-}
 
 #titleBar .sceneName {
   width: 100%;
   height: 100%;
   line-height: 30px;
   padding: 5px;
-  backdrop-filter: blur(5px); 
-  background-color: rgb(130, 130, 130);
-  background-color: rgba(250, 250, 250, 0.15);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+ 
 
   -moz-user-select: text;
   -webkit-user-select: text;
@@ -108,9 +95,6 @@ body.multiple-scenes.mobile #titleBar {
   width: 40px;
   height: 40px;
   padding: 5px;
-  backdrop-filter: blur(5px); 
-  background-color: rgb(130, 130, 130);
-  background-color: rgba(250, 250, 250, 0.15);
 }
 
 .mobile #fullscreenToggle {
@@ -159,9 +143,6 @@ body.fullscreen-enabled #fullscreenToggle {
   width: 40px;
   height: 40px;
   padding: 5px;
-  backdrop-filter: blur(5px); 
-  background-color: rgb(130, 130, 130);
-  background-color: rgba(250, 250, 250, 0.15);
 }
 
 .mobile #autorotateToggle {
@@ -214,9 +195,7 @@ body.fullscreen-enabled.mobile #autorotateToggle {
   width: 40px;
   height: 40px;
   padding: 5px;
-  backdrop-filter: blur(5px); 
-  background-color: rgb(130, 130, 130);
-  background-color: rgba(250, 250, 250, 0.15);
+
 }
 
 .mobile #sceneListToggle {
@@ -268,6 +247,7 @@ body.fullscreen-enabled.mobile #autorotateToggle {
   padding-top: 40px;
   width: 220px;
   max-height: 100%;
+  border-radius: 6px;
   overflow-x: hidden;
   overflow-y: auto;
   margin-left: 0;
@@ -353,13 +333,13 @@ body.single-scene #sceneListToggle {
   height: 60px;
   margin-left: -30px;
   margin-top: -30px;
-  opacity: 0.9;
+  opacity: 0.6;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 
 .no-touch .link-hotspot:hover {
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .mobile .link-hotspot {
@@ -389,8 +369,9 @@ body.single-scene #sceneListToggle {
 
   border-radius: 5px;
 
-  background-color: rgb(240, 240, 240, 0.50);
-  background-color: rgba(240, 240, 240, 0.50);
+  backdrop-filter: blur(3x); 
+  background-color: rgb(160, 160, 160);
+  background-color: rgba(250, 250, 250, 0.15);
 
   color: #fff;
 
@@ -794,6 +775,26 @@ body.single-scene #sceneListToggle {
 
 /* View control buttons */
 
+#controlBar {
+  display: none;
+  position: absolute;
+
+  margin-left: -155px;
+  left: 50%;
+  width: 310px;
+  bottom: -5px;
+  height: 43px;
+  padding: 5px;
+  border-radius: 5px;
+
+  backdrop-filter: blur(3px); 
+  background-color: rgb(130, 130, 130);
+  background-color: rgba(250, 250, 250, 0.01);
+}
+
+/*.viewControlBar {
+}*/
+
 .viewControlButton {
   display: none;
   position: absolute;
@@ -802,12 +803,16 @@ body.single-scene #sceneListToggle {
   width: 40px;
   height: 38px;
   padding: 5px;
-  background-color: rgb(240, 240, 240);
-  background-color: rgba(240, 240, 240, 0.50);
 }
 
 body.view-control-buttons .viewControlButton {
   display: block;
+
+}
+
+#controlBar {
+  display: block;
+
 }
 
 /* Hide controls when width is too small */
@@ -815,6 +820,12 @@ body.view-control-buttons .viewControlButton {
   body.view-control-buttons .viewControlButton {
     display: none;
   }
+
+  #controlBar {
+    display: none;
+  
+  }
+
 }
 
 .viewControlButton .icon {
