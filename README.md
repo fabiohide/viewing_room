@@ -1,2 +1,2 @@
 # viewing_room
-Viewing room test
+Online viewing room test on marzipano.js.
